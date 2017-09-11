@@ -11,7 +11,7 @@ g = 9.8
 l = 1.0
 
 # Condiciones de borde
-phi_0 = np.pi / 1
+phi_0 = np.pi / 4
 w_0 = 0
 
 
