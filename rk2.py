@@ -11,7 +11,7 @@ g = 9.8
 l = 1.0
 
 # Condiciones de borde
-phi_0 = np.pi / 8
+phi_0 = np.pi / 4
 w_0 = 0
 
 
@@ -64,7 +64,7 @@ for i in range(1, len(t)):
     y_solucion[i] = rk2_paso(f_pendulo, t[i-1],
                              y_solucion[i-1], h)
 
-plt.plot(t, y_solucion[:,0], label='rk2')
+plt.plot(t, y_solucion[:,0], label='rk2; $\phi_0=\pi/4$')
 
 
 
@@ -72,4 +72,4 @@ plt.xlabel('Tiempo')
 plt.ylabel('$\phi(t)$')
 plt.legend()
 plt.savefig('rk2_pequenas_osc.png')
-#plt.show()
+plt.show()
